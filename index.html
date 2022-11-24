@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>My Todo App</h1>
+        <div class="input-header">
+            <input type="text" class="input-field" id="inputField" placeholder="Task to complete">
+            <button class="add-button" id="addBtn">Add Item</button>
+        </div>
+        <div class="tasks">
+            <h2>Task List</h2>
+            <div class="task-list" id="taskList">
+                <div class="task" id="task">
+                    <input type="text" class="task-input" placeholder="New Task">
+                    <div class="task-icon" id="taskIcon">
+                        <i class="fas fa-pen-square"></i>
+                        <i class="fa-sharp fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="clear-button" id="clearBtn">Clear All</button>
+
+    </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
