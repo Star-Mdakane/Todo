@@ -2,6 +2,7 @@ const input = document.getElementById('inputField');
 const addBtn = document.getElementById('addBtn');
 const taskList = document.getElementById('taskList');
 const clear = document.getElementById('clearBtn');
+const wrap = document.getElementById('wrap');
 
 addBtn.addEventListener('click', () => {
     if (input.value.trim() != 0) {
@@ -34,4 +35,9 @@ taskList.addEventListener('click', (e) => {
     if (e.target.classList.contains('fa-pen-square')) {
         e.target.parentElement.parentElement.classList.toggle('completed');
     }
+})
+
+
+clear.addEventListener('click', (e) => {
+    taskList.innerHTML = '';
 })
