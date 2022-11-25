@@ -100,9 +100,12 @@ button:hover {
     font-size: 1.1rem;
     font-weight: 500;
     margin: 0;
-    background-color: #fff;
     border-radius: 5px;
     padding: 5px;
+}
+
+.task.completed p {
+    text-decoration: line-through;
 }
 
 i {

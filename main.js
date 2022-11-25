@@ -23,3 +23,15 @@ addBtn.addEventListener('click', () => {
     }
 });
 
+taskList.addEventListener('click', (e) => {
+
+    if (e.target.classList.contains('fa-rectangle-xmark')) {
+        e.target.parentElement.parentElement.remove();
+    }
+});
+
+taskList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('fa-pen-square')) {
+        e.target.parentElement.parentElement.classList.toggle('completed');
+    }
+})
